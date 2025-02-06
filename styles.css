@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: linear-gradient(45deg, #ff6600, #6600ff, #33cc33, #ffcc00);
+    background-size: 300% 300%;
+    animation: bgAnimation 8s infinite alternate;
+    color: white;
+}
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 50px 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.side-menu {
+    width: 200px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+}
+
+.side-menu ul li a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+main {
+    margin-left: 220px;
+    padding: 30px;
+    width: calc(100% - 220px);
+}
+
+section {
+    padding: 40px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background: #ffcc00;
+    color: black;
+}
